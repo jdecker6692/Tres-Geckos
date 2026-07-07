@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tres Geckos Coastal Goods</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      color: #1f1f1f;
+      background: #f7f3ec;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero {
+      max-width: 900px;
+    }
+
+    .brand {
+      font-size: 18px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 96px);
+      font-weight: normal;
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .subtitle {
+      font-size: clamp(18px, 3vw, 28px);
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 30px;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 42px;
+      font-weight: normal;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 45px;
+    }
+
+    .card {
+      background: white;
+      padding: 35px 25px;
+      text-align: center;
+      border: 1px solid #e5dfd5;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 12px;
+    }
+
+    .dark {
+      background: #111;
+      color: #f7f3ec;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 50px;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .split p {
+      font-size: 19px;
+    }
+
+    .notes {
+      font-size: 22px;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .contact {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .contact a {
+      color: #1f1f1f;
+      font-size: 22px;
+    }
+
+    footer {
+      padding: 35px;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: #eee6da;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <div class="brand">Tres Geckos Coastal Goods</div>
+      <h1>Coastal essentials from Cuyutlán, Mexico.</h1>
+      <p class="subtitle">Small-batch bath, body, and hospitality products inspired by citrus groves, coconut palms, sea salt, and life on the Mexican Pacific.</p>
+      <a href="mailto:james.r.decker@gmail.com" class="button">Contact Us</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="intro">
+      <p>
+        Tres Geckos is a new coastal goods brand developed in Cuyutlán, Colima.
+        Our first collection is designed for boutique hotels, beach homes, vacation rentals,
+        and everyday coastal living.
+      </p>
+    </div>
+  </section>
+
+  <section class="dark">
+    <h2>Our First Collection</h2>
+    <div class="products">
+      <div class="card">
+        <h3>Hand Soap</h3>
+        <p>Bright coastal citrus for daily use.</p>
+      </div>
+      <div class="card">
+        <h3>Body Wash</h3>
+        <p>Clean, fresh, and beach-inspired.</p>
+      </div>
+      <div class="card">
+        <h3>Shampoo</h3>
+        <p>Simple coastal care for hotel and home.</p>
+      </div>
+      <div class="card">
+        <h3>Conditioner</h3>
+        <p>Softening care with a refined coastal scent.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="split">
+      <div>
+        <h2>Signature Scent</h2>
+      </div>
+      <div>
+        <p>
+          Our fragrance direction begins with Mexican key lime, bergamot,
+          pink grapefruit, and sea salt — a clean, bright scent designed to feel
+          fresh, elevated, and unmistakably coastal.
+        </p>
+        <p class="notes">Key Lime · Bergamot · Pink Grapefruit · Sea Salt</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="split">
+      <div>
+        <h2>Made in Cuyutlán</h2>
+      </div>
+      <div>
+        <p>
+          Inspired by Tres Geckos House on the coast of Colima, our products are rooted
+          in the textures and scents of the region — coconut palms, citrus, salt air,
+          warm sand, and the rhythm of Pacific beach life.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="contact">
+      <h2>Hotel Partnerships</h2>
+      <p>
+        Launching soon with amenity-size products for boutique hotels, villas,
+        vacation rentals, and coastal hospitality partners in Mexico.
+      </p>
+      <br />
+      <p>For samples, wholesale, or partnership inquiries:</p>
+      <p><a href="mailto:james.r.decker@gmail.com">james.r.decker@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    Tres Geckos · Cuyutlán, Colima, México
+  </footer>
+
+</body>
+</html>
